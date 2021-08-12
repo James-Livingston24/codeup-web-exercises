@@ -1,9 +1,10 @@
-"use strict";
+console.log("Hello from external JavaScript");
 
-// console.log("Hello dawg!");
-// alert("You are doing fine");
+alert("Welcome to my Website!");
 
-// var userConfirm = confirm("Do you want to remain logged in?");
+var userInput = prompt("What is your favorite color?");
 
-// alert("The user selected: " + userConfirm);
+alert("Great, " + userInput + " that is my favorite color too!");
 
+// When the exercise asks you to use a number, instead use a prompt to ask the user for that number.
+// Use an alert to show the results of each problem.
