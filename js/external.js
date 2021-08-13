@@ -29,3 +29,4 @@ alert("You will be paid " + (amazon * 4) + " from Amazon");
 var facebook  = prompt("How much does Facebook pay you per hour?");
 
 alert("You will be paid " + (facebook * 10) + " from Facebook");
+
