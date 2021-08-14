@@ -10,9 +10,15 @@
  */
 
 function sayHello(name) {
+    return "Hello, " + name;
+}
+console.log(sayHello("James"));
+
+/** function sayHello(name) {
     console.log("Hello, " + name + "!")
 }
-sayHello("James")
+sayHello("James")  */
+
 
 
 /**
@@ -25,8 +31,11 @@ sayHello("James")
  * console.log 'helloMessage' to check your work
  */
 
-var helloMessage = "James";
-sayHello(helloMessage);
+var helloMessage = sayHello("James");
+console.log(helloMessage);
+
+/** var helloMessage = "James";
+sayHello(helloMessage); */
 
 /**
  * TODO:
@@ -34,7 +43,7 @@ sayHello(helloMessage);
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
-
+// got this one right!
 var myName = "James";
 console.log(sayHello(myName));
 
@@ -61,11 +70,17 @@ var random = Math.floor((Math.random() * 3) + 1);
  * number)
  */
 
-console.log("Random Number is: " + random.toString());
+function isTwo(number) {
+    console.log("Our number is: " + number);
+    return number === 2;
+}
+console.log(isTwo(random));
+
+/** console.log("Random Number is: " + random.toString());
 function isTwo(number) {
     (number % 2 === 1) ? console.log("False"): console.log("True");
 }
-isTwo(random);
+isTwo(random); */
 
 
 /**
@@ -86,13 +101,20 @@ isTwo(random);
  * then display the dollar amount they should tip
  */
 
-function calculateTip() {
-    var amount = prompt("How much was your bill?");
-    var tipRequest = prompt("What % would you like to tip?");
-    var tip = amount * (tipRequest / 100);
-    alert("You should pay a $" + tip + " tip" );
-    }
-    calculateTip();
+function calculateTip(tipPercentage, total) {
+    return tipPercentage * total;
+}
+
+console.log(calculateTip(.2, 20));
+console.log(calculateTip(.25, 25.50));
+console.log(calculateTip(.15, 33.42));
+
+var userBill = prompt("How much was your bill?");
+var userTip = prompt("How much would you like to tip in a whole number?") / 100;
+
+alert("Thank you for your service ~ You will be tipping : $" + calculateTip(userTip, userBill));
+
+
 
 /**
  * TODO:
@@ -109,9 +131,16 @@ function calculateTip() {
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 
+function applyDiscount(originalPrice, discountPercent) {
+    return originalPrice - (originalPrice * discountPercent)
+}
+
+// the below works but did more than was being asked...however, you are actually on point.
+/**
 var originalPrice = prompt("How much is the price before the discount?");
 var discountPercent = prompt("What percentage is the discount?");
 function applyDiscount(a, b) {
     return a - (a * b);
 }
 alert("Your total after the discount is $" + applyDiscount(originalPrice, discountPercent) + "!");
+*/
