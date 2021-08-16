@@ -30,3 +30,23 @@ var facebook  = prompt("How much does Facebook pay you per hour?");
 
 alert("You will be paid " + (facebook * 10) + " from Facebook");
 
+// productQuantity > 2 || !offerExpired
+//premiumMem === true, off still needs to be valid
+/**
+var productQuantity = 1;
+
+var offerValid = true;
+
+var premiumMem = true
+
+console.log((productQuantity > 2 || premiumMem) && offerValid);
+ */
+
+var productQuantity = prompt("How many items are in your cart?");
+
+var offerValid = confirm("Is there an offer on these items?");
+
+var premiumMem = confirm("Do you have your membership card?");
+
+alert("Customer qualifies for offer? " + (productQuantity > 2 || premiumMem) && offerValid);
+
