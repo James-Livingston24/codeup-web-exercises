@@ -48,3 +48,17 @@ if(trafficLight === "red") {
 }
  */
 // look at instructor's code in git to see a function use w/ if/else etc.
+
+var pizzaPreference = prompt("What kind of pizza do you like?");
+
+switch(pizzaPreference) {
+    case "pineapple and hot sauce":
+        alert("What a coincidence, that's my favorite!");
+        break;
+    case "cheese":
+        alert("Just plain cheese? Okay...");
+        break;
+    default:
+        alert(pizzaPreference + " isn't my favorite, but let's order some!");
+        break;
+}
