@@ -139,10 +139,11 @@ whilemultiplybytwountilgreaterthan100(2);
 
 // TODO: Quasar, how would we refactor the above back into a WHILE loop as we saw earlier?
 
+
 // Below is a funky example that works, but will rely on moving between different data types.
-// for (var i = "A"; i.length < 8; i = i + "A") {
-//     console.log("This is a bit of a tricky way to run a for loop, but hey, it works...");
-// }
+for (var i = "A"; i.length < 8; i = i + "A") {
+    console.log("This is a bit of a tricky way to run a for loop, but hey, it works...");
+}
 
 // We can get a loop to stop using break;
 
@@ -170,15 +171,6 @@ whilemultiplybytwountilgreaterthan100(2);
 
 // we can also use continue to allow a loop to skip an iteration.
 
-function allOddNumbersToX (x) {
-    for (var i = 0; i <= x; i++) {
-        if (i % 2 === 0) {
-            continue;
-        }
-        console.log(i);
-    }
-    return x;
-}
 
 // allOddNumbersToX(17);
 // allOddNumbersToX(18);
