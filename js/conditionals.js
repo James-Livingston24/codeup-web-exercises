@@ -147,11 +147,28 @@ analyzeColor(userColor);
  * return value.
  */
 
-function calculateTotal() {
-
+/*
+function calculateTotal(luckyNumber, totalAmount) {
+    prompt("What was your lucky number?")
+    prompt("What was your total amount?")
+    if (0) {
+        return(0 - totalAmount);
+    } else if (1) {
+        console.log("Congratulations, you get a 10% discount!");
+    } else if (2) {
+        console.log("Congratulations, you get a 25% discount!");
+    } else if (3) {
+        console.log("Congratulations, you get a 35% discount!");
+    } else if (4) {
+        console.log("Congratulations, you get a 50% discount!");
+    } else if (5) {
+        console.log("Congratulations, you get a 100% discount!");
+    } else {
+        console.log("You must not have received your ticket when you entered the store, please return to the front of the store to collect your lucky number!");
     }
-
-
+}
+calculateTotal(4, 25);
+*/
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 6.
@@ -181,9 +198,16 @@ var luckyNumber = Math.floor(Math.random() * 6);
  * HINT: The way we prompt for a value could be improved
  */
 
-/**
+/*
 confirm("Would you like to enter a number?");
     if (confirm) {
         prompt("Please enter a number")
     }
- */
+*/
+
+function showMultiplicationTable(number) {
+    for (var i = 1; i <= 10; i++) {
+        console.log(i * number);
+    }
+}
+    showMultiplicationTable(7);
