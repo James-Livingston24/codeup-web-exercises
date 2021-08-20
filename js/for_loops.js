@@ -1,8 +1,8 @@
-//
+
 // function showMultiplicationTable(number) {
 //     for (var i = 1; i <= 10; i++) {
-//         var result = number * i;
 //         console.log(i * number);
+//
 //     }
 // }
 // showMultiplicationTable(7);
@@ -21,22 +21,20 @@
 // }
 
 
-
-var i, j;
-
-for (i = 1; i <=9; i++) {
-    var result = ""
-    for (j = 1; j <= i; j++) {
-        result = result + i.toString()
-    }
-        console.log(result);
-}
+//
+// var i, j;
+//
+// for (i = 1; i <=9; i++) {
+//     var result = ""
+//     for (j = 1; j <= i; j++) {
+//         result = result + i.toString()
+//     }
+//         console.log(result);
+// }
 
 // for (i = 100; i >= 5; i -= 5) {
 //     console.log(i)
 // }
-
-
 
 
 
