@@ -194,7 +194,7 @@
 //
 // alert("Hello, your lucky number is " + luckyNumber);
 // alert("The price before the discount was $" + totalBill);
-// alert("Congrats, your price after disount is $" + pay);
+// alert("Congrats, your price after discount is $" + pay);
 
 /**
  * TODO:

@@ -12,7 +12,7 @@
      * console.log planetsArray to check your work
      */
     //
-    var planetsArray = planetsString.split(',');
+    var planetsArray = planetsString.split('|');
     //console.log(planetsArray);
 
     /**
@@ -22,13 +22,20 @@
      *
      *
      * BONUS:
-     * Create another string that would display your planets in an undordered
+     * Create another string that would display your planets in an unordered
      * list. You will need an opening AND closing <ul> tags around the entire
      * string, and <li> tags around each planet.
      */
     var planetsJoinString = planetsArray.join("<br>");
 
     console.log(planetsJoinString);
+
+
+    //Bonus // from the review please fix in your own work
+    var stringAsUl = "<ul>" + planetsArray.map((planet) => { return "<li>" + planet + "</li>"}).join("") + "</ul>"
+
+    var planetsHTML = '<ul></ul>' + planetsArray.join('</li></li>') + '</li></ul>';
+    console.log(planetsHTML)
 
 
 })();
