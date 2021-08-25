@@ -113,10 +113,12 @@ console.log(books[2].title, books[2].author);
      *      ---
      *      ...
      */
-    books.forEach(function(element, index, array){
-        console.log('The book at index ' + books[i].index + 'is:' + books[i].name + ", written by " + books[i].author );
-    });
-
+    // books.forEach(function(element, index, array){
+    //     console.log('The book at index ' + books.index + 'is:' + books[i].title + ", written by " + books[i].author );
+    // });
+    for (var i = 0; i < books.length; i++) {
+        console.log("The book at index " + i + ", titled: " + books[i].title + ", authored by: " + books[i].author);
+    }
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
