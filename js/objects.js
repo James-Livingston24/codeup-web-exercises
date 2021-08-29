@@ -15,6 +15,14 @@
     person.firstName = "James";
     person.lastName = "Livingston";
 
+    //shan shan review
+    // var person = {
+    //     firstName: 'James',
+    //     lastName: 'Livingston'
+    // };
+    //
+    // console.log(person.firstName)
+
 
     /**
      * TODO:
@@ -60,9 +68,22 @@
         } else {
             console.log("Sorry, " + shoppers[i].name + " you do not receive any discount");
         }
-        }
+    }
+})
 
-
+//Shan Shan review
+//     function getAmountAfterDiscount(shopper) {
+//         return shopper.amount - shopper.amount * .12;
+//     }
+//     shoppers.forEach(function(shopper){
+//         if (shopper.amount >= 200) {
+//             var pay = shopper.amount - shopper.amount * .12;
+//             console.log("Name: " + shopper.name + ", Original amount: " + shopper.amount + ", Discount: 12%, Amount after discount: " + pay + ".");
+//
+//         } else {
+//             console.log("Name: " + shopper.name + ", Original amount: " + shopper.amount + ", No discount.");
+//         }
+//     });
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -76,16 +97,16 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
-var books = [
-        {title: "The Gospel of Matthew", author: "Apostle Matthew"},
-        {title: "The Gospel of Mark", author: "John Mark"},
-        {title: "The Gospel of Luke", author: "Saint Luke"},
-        {title: "The Gospel of John", author: "Apostle John"},
-        {title: "The Book of Acts", author: "Saint Luke"}
-    ];
-console.log(books[0].title, books[0].author);
-console.log(books[1].title, books[1].author);
-console.log(books[2].title, books[2].author);
+// var books = [
+//         {title: "The Gospel of Matthew", author: "Apostle Matthew"},
+//         {title: "The Gospel of Mark", author: "John Mark"},
+//         {title: "The Gospel of Luke", author: "Saint Luke"},
+//         {title: "The Gospel of John", author: "Apostle John"},
+//         {title: "The Book of Acts", author: "Saint Luke"}
+//     ];
+// console.log(books[0].title, books[0].author);
+// console.log(books[1].title, books[1].author);
+// console.log(books[2].title, books[2].author);
 
 
 
@@ -116,9 +137,18 @@ console.log(books[2].title, books[2].author);
     // books.forEach(function(element, index, array){
     //     console.log('The book at index ' + books.index + 'is:' + books[i].title + ", written by " + books[i].author );
     // });
-    for (var i = 0; i < books.length; i++) {
-        console.log("The book at index " + i + ", titled: " + books[i].title + ", authored by: " + books[i].author);
-    }
+
+    //shan shan review
+    // for (var i = 0; i < books.length; i++) {
+    //     console.log("The book at index " + i + ", titled: " + books[i].title + ", authored by: " + books[i].author);
+    // }
+    //
+    // books.forEach(function(book, index){
+    //    console.log("Book # " + (index + 1));
+    //    console.log("Title: " + book.title);
+    //    console.log("Author: " + book.author);
+    //    console.log("---");
+    // })
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
@@ -130,4 +160,22 @@ console.log(books[2].title, books[2].author);
      *   `showBookInfo` function.
      */
 
-})();
+    // var books = [
+    //     {title: "The Gospel of Matthew", author: "Apostle Matthew"},
+    //     {title: "The Gospel of Mark", author: "John Mark"},
+    //     {title: "The Gospel of Luke", author: "Saint Luke"},
+    //     {title: "The Gospel of John", author: "Apostle John"},
+    //     {title: "The Book of Acts", author: "Saint Luke"}
+
+//     function createBook(title, name) {
+//         //get name array
+//         var nameArr = name.split(" ");
+//         var firstName = nameArr[0];
+//         var lastName = nameArr[1];
+//         return {
+//             title: title,
+//             author: name
+//         };
+//         function
+//
+// })();
