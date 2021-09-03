@@ -175,7 +175,33 @@
 //
 // Outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
 
-function tellFortune(career, locate, spouse, kids) {
-    return "You will be a " + career + " in " + locate + " , and married to " + spouse + " with " + kids + " kids."
-}
-console.log(tellFortune("developer", "Texas", "Sharonda", 4));
+// function tellFortune(career, locate, spouse, kids) {
+//     return "You will be a " + career + " in " + locate + " , and married to " + spouse + " with " + kids + " kids."
+// }
+// console.log(tellFortune("developer", "Texas", "Sharonda", 4));
+
+
+// Write a function named calculateDogAge that:
+//     * takes 1 argument: your puppy’s age.
+// * calculates your dog’s age based on the conversion rate of 1 human year to 7 dog years.
+// * outputs the result to the screen like so: “Your doggie is NN years old in dog years!”
+//     Call the function three times with different sets of values.
+//     Bonus: Add an additional parameter to the function that takes the conversion rate of human to dog years.
+
+// function calculateDogAge(age) {
+//     return age = age * 7;
+// }
+// console.log(calculateDogAge(14));
+
+// Kenneth's solution:
+//function calculateDogAge
+// 2 parameters: my puppy's age and conversion rate to human years
+// output : return a formatted string
+
+// function calculateDogAge(puppyAge, conversionNum) {
+//         var ageInHumanYears = puppyAge * conversionNum;
+//         return "Hello there! Your little dog is " + ageInHumanYears + " years old. Nice!"
+//
+//
+// }
+// alert(calculateDogAge(5,7));

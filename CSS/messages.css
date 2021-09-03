@@ -1,0 +1,56 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+
+}
+
+#Box1 {
+    width: 600px;
+    color: mediumpurple;
+    background-color: lavender;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    margin: 10px;
+}
+
+#Box2 {
+    color: green;
+    background-color: #D3F8D3;
+    width: 600px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    margin: 10px;
+}
+
+#Box3 {
+    color: #b6a358;
+    background-color: lightyellow;
+    width: 600px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    margin: 10px;
+}
+
+#Box4 {
+    background-color: lightpink;
+    width: 600px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    margin: 10px;
+    color: #881533;
+}

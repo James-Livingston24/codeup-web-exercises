@@ -1,21 +1,16 @@
 html {
     background-color: beige;
-    background-image:url(white-waves.png);
+    background-image:url(../white-waves.png);
     font-family:Papyrus;
 }
-h1,
-.fancy-header {
-    color: purple;
+h1, .fancy-header {
+    text-align: center;
+    color:rgba(10,23,48,0.98);
     text-decoration: underline;
 }
 
-h1 {
-    text-align: center;
-}
-
-
 h2 {
-    color: crimson;
+    color: rgba(10,23,48,0.98);
     text-decoration: underline;
 }
 
@@ -23,8 +18,12 @@ ul {
     list-style:square;
 }
 
-table, th, td {
+th, td {
     border: 1px solid black;
     padding: 15px;
     font-size: medium;
+}
+
+section{
+    text-align:center;
 }
