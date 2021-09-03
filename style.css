@@ -1,5 +1,30 @@
+html {
+    background-color: beige;
+    background-image:url(white-waves.png);
+    font-family:Papyrus;
+}
 h1,
 .fancy-header {
     color: purple;
     text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+h2 {
+    color: crimson;
+    text-decoration: underline;
+}
+
+ul {
+    list-style:square;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 15px;
+    font-size: medium;
 }

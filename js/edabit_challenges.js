@@ -166,3 +166,16 @@
 // I have a bucket containing an amount of navy blue paint and I'd like to paint as many walls as possible. Create a function that returns the number of complete walls that I can paint, before I need to head to the shops to buy more.
 // n is the number of square meters I can paint.
 // w and h are the widths and heights of a single wall in meters.
+
+// Why pay a fortune teller when you can just program your fortune yourself?
+//
+//     Write a function named tellFortune that:
+//     takes 4 arguments: number of children, partner's name, geographic location, job title.
+//
+//
+// Outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
+
+function tellFortune(career, locate, spouse, kids) {
+    return "You will be a " + career + " in " + locate + " , and married to " + spouse + " with " + kids + " kids."
+}
+console.log(tellFortune("developer", "Texas", "Sharonda", 4));
