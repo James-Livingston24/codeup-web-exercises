@@ -205,3 +205,118 @@
 //
 // }
 // alert(calculateDogAge(5,7));
+
+// Define a function named timesFour that takes in an input and multiples that input by four if it is numeric. If the input is not numeric, then return false.
+// timesFour(0) //0
+// timesFour("5") //20
+// timesFour(-5) //-20
+// timesFour('Texas') //false
+// timesFour([2,1,0]) //false
+// timesFour(true) //false
+// timesFour(null) //false
+
+// define function named timesFour
+// takes in one input
+// multiply input by four if it is numeric
+// if not numeric, return false;
+//
+// function timesFour(input) {
+//     if (!isNaN(parseInt(input))) {
+//         return input * 4;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(timesFour([2, 1, 0]));
+
+// ^^ return NaN with [2, 1, 0] while the one below returns true on all.
+
+// multiplies input by 4 if it is a number
+// if not numeric, then return false
+//
+function timesFour(input) {
+    if (Array.isArray(input) || isNaN(parseInt(input))) {
+            return false;
+    } else {
+        return input * 4;
+    }
+
+}
+console.log(timesFour(14));
+
+// Define a function named convertDaystoHours that takes in one input Days. Return the conversion of the number of days into total hours. If the input is not numeric or a numeric string, convertDaystoHours, should return false.
+
+// convertDaystoHours(0) //0
+// convertDaystoHours('5') // 120
+// convertDaystoHours('Texas') //false
+// convertDaystoHours([2, 1, 0]) //false
+// convertDaystoHours(true) //false
+// convertDaystoHours(false) //false
+
+// define function named convertDaystoHours takes in one input
+// return convert numbers days into total hours
+// if input not numeric or numeric string, return false
+
+function convertDaystoHours(input) {
+    if (Array.isArray(input) || isNaN(parseInt(input))) {
+        return false;
+    } else {
+        return input * 24;
+    }
+
+}
+console.log(convertDaystoHours([2, 1, 0]));
+
+// function convertDaystoHours(days) {
+//     if (typeof parseFloat(days) === !isNaN) {
+//         return days * 24;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(convertDaystoHours("Texas"));
+
+// Write a function named calculateTax that takes in two inputs representing the totalPaid and the taxPercent. If both inputs are numeric or numeric strings, calculateTax should return the total with tax added in a string looking like: “$XX.XX”. If either or both inputs are not numeric or numeric strings, calculateTax should return false.
+// calculateTax(25, 8)				 // “$27.00"
+// calculateTax(10, 12)             // “$11.20”
+// calculateTax(120, 15.5)			 //	“$138.60"
+// calculateTax(10, true)           // false
+// calculateTax([1, 2, 3], 10)      // false
+// calculateTax(“Codeup”, 100)      // false
+// calculateTax()                   // false
+
+// write a function named calculateTax
+// takes in two inputs totalPaid and taxPercent
+// if both are numeric or numeric strings, calaculateTx should return total with tax added
+// should look like "$XX.XX"
+// if either or both are not numeric/strings, return false;
+
+function calculateTax(totalPaid, taxPercent) {
+    if (!isNaN(parseInt(totalPaid)) && !isNaN(parseInt(taxPercent))) {
+        return  "$" + ((totalPaid / 100) * taxPercent + totalPaid).toFixed(2);
+    } else {
+        return false;
+    }
+}
+console.log(calculateTax(25, 8));
+
+// function calculateTax(totalPaid, taxPercent) {
+//     if (typeof parseFloat(totalPaid) === "number" && typeof parseFloat(taxPercent) === "number") {
+//         var equals = totalPaid * taxPercent;
+//         return equals + totalPaid;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(calculateTax(30, .10));
+//
+// function helloBye(str, num) {
+//     var strCap = str.charAt(0).toUpperCase() + str.slice(1);
+//     if (num === 1) {
+//         return "Hello " + strCap;
+//     } else {
+//         return "Bye " + strCap;
+//     }
+//
+// }
+// console.log(helloBye("sharonda", 1));
