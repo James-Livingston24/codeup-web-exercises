@@ -229,8 +229,6 @@
 // }
 // console.log(timesFour([2, 1, 0]));
 
-// ^^ return NaN with [2, 1, 0] while the one below returns true on all.
-
 // multiplies input by 4 if it is a number
 // if not numeric, then return false
 //
