@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+
+}
+body {
+    margin: auto;
+}
+
+nav {
+    background: lightgray;
+}
+
+#Logo {
+    font-size: 3em;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    font-family: "Montserrat";
+}
+
+#Follow {
+    margin-left: auto;
+}
+ul {
+    display: flex;
+    list-style: none;
+    padding: 1em;
+    font-size: smaller;
+    font-weight: bold;
+    align-items: center;
+    flex-direction: row;
+
+
+}
+
+nav a {
+    flex-direction: row;
+    text-decoration: none;
+    color: black;
+    font-family: "Work Sans";
+    display: inline-block;
+    justify-content: space-evenly;
+}
+
+
+
+nav a:hover {
+    background: lightgray;
+    color: blue;
+}
