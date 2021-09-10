@@ -1,49 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Work+Sans&display=swap');
+
+
 * {
     box-sizing: border-box;
-
-}
-body {
-    margin: auto;
 }
 
-nav {
-    background: lightgray;
+li, a {
+    font-family: "Work Sans";
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+
+}
+
+header {
+    background-color: lightgray;
+}
+
+.nav_links {
+    list-style: none;
+
+}
+
+.nav_links li {
+    display: inline-block;
+}
+
+.li:nth-of-type(1):nth-of-type(2):nth-of-type(3):nth-of-type(4) {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_links li a:hover {
+    color: blue;
 }
 
 #Logo {
-    font-size: 3em;
-    padding-top: .2em;
-    padding-bottom: .2em;
+    font-size: x-large;
     font-family: "Montserrat";
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
 }
 
 #Follow {
-    margin-left: auto;
-}
-ul {
+    justify-content: flex-end;
     display: flex;
-    list-style: none;
-    padding: 1em;
-    font-size: smaller;
-    font-weight: bold;
-    align-items: center;
-    flex-direction: row;
-
-
-}
-
-nav a {
-    flex-direction: row;
-    text-decoration: none;
-    color: black;
-    font-family: "Work Sans";
-    display: inline-block;
-    justify-content: space-evenly;
-}
-
-
-
-nav a:hover {
-    background: lightgray;
-    color: blue;
+    align-items: flex-end;
 }
