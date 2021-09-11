@@ -1,53 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Work+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
-li, a {
-    font-family: "Work Sans";
-    font-weight: 500;
-    font-size: 16px;
-    color: black;
-
-}
-
-header {
-    background-color: lightgray;
-}
-
-.nav_links {
+.container {
+    display: flex;
     list-style: none;
-
+    background-color: lightgray;
+    font-family: "Work Sans";
 }
 
-.nav_links li {
+.container > li {
+    flex-grow: 1;
+}
+
+.container > li > a {
     display: inline-block;
-}
-
-.li:nth-of-type(1):nth-of-type(2):nth-of-type(3):nth-of-type(4) {
-    justify-content: space-between;
     align-items: center;
+    color: black;
 }
 
-.nav_links li a:hover {
-    color: blue;
-}
 
-#Logo {
-    font-size: x-large;
-    font-family: "Montserrat";
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-self: center;
+/*li, a {*/
+/*    font-family: "Work Sans";*/
+/*    font-weight: 500;*/
+/*    font-size: 16px;*/
+/*    color: black;*/
+/*}*/
 
-}
+/*header {*/
+/*    background-color: lightgray;*/
 
-#Follow {
-    justify-content: flex-end;
-    display: flex;
-    align-items: flex-end;
-}
+/*}*/
+
+/*.nav_links {*/
+/*    list-style: none;*/
+
+/*}*/
+
+/*.nav_links li {*/
+/*    display: inline-block;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*}*/
+
+
+/*.nav_links li a:hover {*/
+/*    color: blue;*/
+/*}*/
+
+/*#logo {*/
+/*    font-family: Montserrat;*/
+/*    font-weight: bold;*/
+/*}*/
+
+
