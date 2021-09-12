@@ -51,27 +51,59 @@ body {
 
         }
         body {
-                display: flex;
+
         }
 
         .alert-info {
                 display: none;
         }
 
-        h1 {
-                display: flex;
-        }
-
-        .nav-links {
+        .company {
                 display: flex;
                 flex-direction: row;
-                justify-content: flex-end;
+        }
 
 
 
+        h1 {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+        }
+
+        .company .nav-links {
+                display: flex;
+                flex-direction: row;
+
+        }
+
+        .nav {
+              margin-left: auto;
         }
 
         .nav-links > li {
                 background: none;
+                display: flex;
         }
+
+        .nav-links > li > a {
+                text-decoration: none;
+        }
+
+        .header-img img {
+                width: 100%;
+        }
+
+        #main\ body {
+                display: flex;
+        }
+
+        .main > p {
+                display: flex;
+                margin-right: 50px;
+
+
+        }
+
 }
+
