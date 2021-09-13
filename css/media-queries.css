@@ -43,6 +43,7 @@ body {
 
         .header-img  img {
         width: 100%;
+        object-fit: cover;
         }
 
 @media screen and (min-width: 992px) {
