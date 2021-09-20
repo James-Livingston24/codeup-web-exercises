@@ -325,21 +325,57 @@ console.log(convertDaystoHours([2, 1, 0]));
 // tacoTuesday(hasTacos) //true
 // tacoTuesday(noTacos) //false
 
-var hasTacos = ["blueberry muffin", "banana", "yogurt", "cereal", "brisket and egg taco"];
-var noTacos = ["parfait", "omlette", "protein shake", "fasting"];
 
-function tacoTuesday(arr) {
-    //arrays have length < use that for my loop
-    //a FOR loop is good for set numbers of iterations
-    for (var i = 0; i < arr.length; i++) {
+// var hasTacos = ["blueberry muffin", "banana", "yogurt", "cereal", "brisket and egg taco"];
+// var noTacos = ["parfait", "omlette", "protein shake", "fasting"];
+//
+// function tacoTuesday(arr) {
+//     //arrays have length < use that for my loop
+//     //a FOR loop is good for set numbers of iterations
+//     for (var i = 0; i < arr.length; i++) {
+//
+//         //as we go through the array: check the element to see if it has the word 'taco'
+//         if (arr[i].includes("taco")) {
+//             //return true if you find a taco
+//             return true;
+//         }else {
+//             return false;
+//         }
+//     }
+// }
+// console.log(tacoTuesday(hasTacos));
 
-        //as we go through the array: check the element to see if it has the word 'taco'
-        if (arr[i].includes("taco")) {
-            //return true if you find a taco
-            return true;
-        }else {
-            return false;
-        }
-    }
+/* DOM exercise -------------------------- */
+
+//TODO: Finish coding this program. You need to stop the setInterval() method after the showTime() function has run five times
+
+
+// let count = 0;
+//
+// function showTime() {
+//
+//     // return new date and time
+//     let dateTime = new Date();
+//
+//     // return the time
+//     let time = dateTime.toLocaleTimeString();
+//
+//     count += 1;
+//
+//     //if the count reaches 5, stop the program.
+//     if (count >= 5){
+//         console.log("Last time getting timestamped");
+//         clearInterval(display);
+//     }
+//
+//     console.log(time)
+// }
+//
+// let display = setInterval(showTime, 5000);
+
+function greet() {
+    console.log("hello world!");
 }
-console.log(tacoTuesday(hasTacos));
+// window.setTimeout(greet, 3000); /* <----- to set without needing to clear out the function... below to clear it */
+var delayedGreeting = window.setTimeout(greet, 3000);
+window.clearTimeout(delayedGreeting);
