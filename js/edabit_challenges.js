@@ -1,3 +1,16 @@
+<!--Write a function logEvens that will accept a number parameter as a n argument that number will indicate the amount of times-->
+<!--to print out all even numbers up to the argument provided.-->
+
+function logEvens(num) {
+  for (var i = 0; i <= num; i++) {
+    if (i % 2 === 0 && i !== 0) {
+        console.log(i);
+    }
+  }
+}
+logEvens(10);
+
+
 // // In this challenge, a farmer is asking you to tell him how many legs can be counted among all his animals. The farmer breeds three species:
 // //
 // // chickens = 2 legs
@@ -232,15 +245,15 @@
 // multiplies input by 4 if it is a number
 // if not numeric, then return false
 //
-function timesFour(input) {
-    if (Array.isArray(input) || isNaN(parseInt(input))) {
-            return false;
-    } else {
-        return input * 4;
-    }
-
-}
-console.log(timesFour(14));
+// function timesFour(input) {
+//     if (Array.isArray(input) || isNaN(parseInt(input))) {
+//             return false;
+//     } else {
+//         return input * 4;
+//     }
+//
+// }
+// console.log(timesFour(14));
 
 // Define a function named convertDaystoHours that takes in one input Days. Return the conversion of the number of days into total hours. If the input is not numeric or a numeric string, convertDaystoHours, should return false.
 
@@ -255,15 +268,15 @@ console.log(timesFour(14));
 // return convert numbers days into total hours
 // if input not numeric or numeric string, return false
 
-function convertDaystoHours(input) {
-    if (Array.isArray(input) || isNaN(parseInt(input))) {
-        return false;
-    } else {
-        return input * 24;
-    }
-
-}
-console.log(convertDaystoHours([2, 1, 0]));
+// function convertDaystoHours(input) {
+//     if (Array.isArray(input) || isNaN(parseInt(input))) {
+//         return false;
+//     } else {
+//         return input * 24;
+//     }
+//
+// }
+// console.log(convertDaystoHours([2, 1, 0]));
 
 // function convertDaystoHours(days) {
 //     if (typeof parseFloat(days) === !isNaN) {
@@ -373,9 +386,15 @@ console.log(convertDaystoHours([2, 1, 0]));
 //
 // let display = setInterval(showTime, 5000);
 
-function greet() {
-    console.log("hello world!");
-}
-// window.setTimeout(greet, 3000); /* <----- to set without needing to clear out the function... below to clear it */
-var delayedGreeting = window.setTimeout(greet, 3000);
-window.clearTimeout(delayedGreeting);
+// function greet() {
+//     console.log("hello world!");
+// }
+// // window.setTimeout(greet, 3000); /* <----- to set without needing to clear out the function... below to clear it */
+// var delayedGreeting = window.setTimeout(greet, 3000);
+// window.clearTimeout(delayedGreeting);
+
+
+
+
+
+
